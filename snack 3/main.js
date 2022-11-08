@@ -9,18 +9,23 @@ const bike = [
     },
     {
         name : "graziella",
-        weightKg: 10,
+        weightKg: 3,
     }
 ];
 //creazione array di oggetti
 
 let elementoCorrente;
-let limite;
+let limite = bike[0].weightKg;
 for(let i = 0; i < bike.length; i++){
     let {name, weightKg} = bike[i];
+    console.log(weightKg);
+    console.log(limite)
     if(weightKg < limite){
+        console.log("ciao")
         limite = weightKg;
+
         elementoCorrente = name;
     }
+   
 }
-console.log(`la bicicletta più leggera è ${elementoCorrente} e il suo peso è pari a: ${limite}kg`);
+ console.log(`la bicicletta più leggera è ${elementoCorrente} e il suo peso è pari a: ${limite}kg`);
