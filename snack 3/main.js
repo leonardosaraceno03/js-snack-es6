@@ -18,10 +18,9 @@ let elementoCorrente;
 let limite = bike[0].weightKg;
 for(let i = 0; i < bike.length; i++){
     let {name, weightKg} = bike[i];
-    console.log(weightKg);
-    console.log(limite)
+    
     if(weightKg < limite){
-        console.log("ciao")
+        
         limite = weightKg;
 
         elementoCorrente = name;
